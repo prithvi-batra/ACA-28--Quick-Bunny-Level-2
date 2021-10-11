@@ -73,7 +73,8 @@ if (rabbit.isTouching(carrot)){
   drawSprites();
 }
 function generateWorms(){
-  if(frameCount%60 == 0){
+  if(frameCount%30 == 0){
+
     snake = createSprite(500,random(70,520),random(30,120),5);
     snake.shapeColor = "green"; 
     snake.velocityX = -8;
